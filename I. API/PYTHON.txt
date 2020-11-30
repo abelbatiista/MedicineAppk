@@ -1,0 +1,3 @@
+API REPOSITORY - https://github.com/abelbatiista/API.git
+
+API HOSTING - https://fastapipython.herokuapp.com/

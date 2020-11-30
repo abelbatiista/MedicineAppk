@@ -13,7 +13,7 @@ export class PaginaprincipalComponent implements OnInit {
   public data: any;
 
   constructor(private _http: HttpClient) { 
-    this.url = "http://localhost:8000"; // http://127.0.0.1:8000
+    this.url = "https://fastapipython.herokuapp.com"; //http://localhost:8000 // http://127.0.0.1:8000
     this.data = false;
   }
 

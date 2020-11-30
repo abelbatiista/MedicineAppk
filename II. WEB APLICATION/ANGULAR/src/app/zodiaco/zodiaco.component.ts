@@ -16,7 +16,7 @@ export class ZodiacoComponent implements OnInit {
   constructor(private _http: HttpClient) {
     this.datas = false;
     this.personas = [];
-    this.url = "http://localhost:8000"; // http://127.0.0.1:8000
+    this.url = "https://fastapipython.herokuapp.com"; //http://localhost:8000 // http://127.0.0.1:8000
    }
 
   ngOnInit(): void {
