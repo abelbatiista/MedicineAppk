@@ -1,0 +1,8 @@
+{
+  "name": "finalmovil",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

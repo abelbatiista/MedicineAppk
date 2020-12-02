@@ -23,7 +23,7 @@ export class UpdateconsultaComponent implements OnInit {
   public manageBody: boolean;
 
   constructor(private _http: HttpClient) { 
-    this.url = "https://fastapipython.herokuapp.com"; //http://localhost:8000 // http://127.0.0.1:8000
+    this.url = "http://localhost:8000"; //http://localhost:8000 // http://127.0.0.1:8000
     this.data = false;
     this.manageBody = false;
   }

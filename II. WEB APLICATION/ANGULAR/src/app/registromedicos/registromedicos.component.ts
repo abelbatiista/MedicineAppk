@@ -18,7 +18,7 @@ export class RegistromedicosComponent implements OnInit {
   public MedicForm: FormGroup
 
   constructor(private _http:HttpClient,private _builder: FormBuilder) {
-    this.url = "https://fastapipython.herokuapp.com"; //http://localhost:8000 // http://127.0.0.1:8000
+    this.url = "http://localhost:8000"; //http://localhost:8000 // http://127.0.0.1:8000
     this.data = false;
     this.MedicForm = this._builder.group({
       username: ['', Validators.required],

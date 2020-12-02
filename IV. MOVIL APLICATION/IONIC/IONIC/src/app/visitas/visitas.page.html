@@ -1,0 +1,34 @@
+<ion-header>
+  <div class="login-header ion-padding">
+    <img class="logo-img" src="assets/imagen/icono.png">
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="center">
+    <div heading-colum-lr>
+      <h1 big-heading>Cantidad de visitas</h1>
+    </div>
+
+  
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Reportes</ion-card-subtitle>
+        <ion-card-title>Cantidad de visitas</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <div class="contenido" *ngFor="let x of visitas">
+          <p>Codigo : {{x["ID"]}}</p> 
+          <p>Nombre : {{ x["Name"] }}</p> 
+          <p>Cantidad de visitas : {{ x["ConsultsQuantity"] }}</p> 
+         <hr>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-label class="ion-text-center"><span (click)="Menu()" class="link-button">Ir a menu</span></ion-label>
+
+    </div>
+</ion-content>

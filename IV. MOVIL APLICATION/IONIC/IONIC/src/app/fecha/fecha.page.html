@@ -1,0 +1,44 @@
+<ion-header>
+  <div class="login-header ion-padding">
+    <img class="logo-img" src="assets/imagen/icono.png">
+  </div>
+</ion-header>
+
+<ion-content>
+  <div class="center">
+    <div heading-colum-lr>
+      <h1 big-heading>Reporte por fecha</h1>
+    </div>
+
+    <ion-item transparent>
+      <img icon-small src="assets/imagen/usericon.jpg">
+      <ion-input [(ngModel)]="Date" name="Date" placeholder="Ingrese la fecha aqui"
+      type="text"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="vistas(); clean();" color="primary" class="ion-button-class" shape="round"
+    fill="solid" size="large" expand="block">Buscar</ion-button>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Reportes</ion-card-subtitle>
+        <ion-card-title>Reporte por fecha</ion-card-title>
+      </ion-card-header>
+    
+      <ion-card-content>
+        <div class="contenido" *ngFor="let x of fecha">
+          <p>Codigo : {{x["ID"]}}</p> 
+            <p>Cedula paciente : {{ x["Patient"]["ID"] }}</p> 
+            <p>Fecha : {{ x["Date"] }}</p> 
+            <p>Motivo consulta : {{ x["ConsultReason"] }}
+            <p>Diagnostico : {{ x["Diagnosis"] }}</p>  
+            <hr>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-label class="ion-text-center"><span (click)="Menu()" class="link-button">Ir a menu</span></ion-label>
+
+    </div>
+
+</ion-content>

@@ -21,7 +21,7 @@ export class LoginComponent implements OnInit {
     private router: Router,
     private _http: HttpClient,
      private _builder: FormBuilder) {
-      this.url = "https://fastapipython.herokuapp.com"; //http://localhost:8000 // http://127.0.0.1:8000
+      this.url = "http://localhost:8000"; //http://localhost:8000 // http://127.0.0.1:8000
       this.data = false;
       this.loginForm = this._builder.group({
         email: ['', Validators.email],
